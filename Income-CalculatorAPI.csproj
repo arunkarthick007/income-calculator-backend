@@ -6,7 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Income_CalculatorAPI</RootNamespace>
   </PropertyGroup>
-
+<Target Name="PrePublishTarget" AfterTargets="Publish">
+  <Exec Command="dotnet ef database update" />
+</Target>
   <ItemGroup>
     <Folder Include="EndPoints\" />
   </ItemGroup>
