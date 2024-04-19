@@ -6,10 +6,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Income_CalculatorAPI</RootNamespace>
   </PropertyGroup>
-  <Target Name="PrePublishTarget" AfterTargets="Publish">
-    <Exec Command="dotnet tool install dotnet-ef --version 3.0.0" />
-    <Exec Command="dotnet tool run dotnet-ef database update" />
-  </Target>
   <ItemGroup>
     <Folder Include="EndPoints\" />
   </ItemGroup>
