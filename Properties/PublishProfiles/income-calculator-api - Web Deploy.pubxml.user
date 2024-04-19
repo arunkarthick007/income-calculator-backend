@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9WhKkmtlGUilzvtD/kDDdAAAAAACAAAAAAAQZgAAAAEAACAAAAA3TlL8KSrAyWj/8Oh8oJteYFDIHIXHCnrrbw5EwjOxYgAAAAAOgAAAAAIAACAAAACz/AFdvlLBfL2Z+rQ1tsSqUlqFgzqQlOd/6defD/jYYIAAAACvQgwpjGTrIh3cs/vkEgEtwfyT4KTVPuWU32lndjMVo231bK/Z5b+8fLn3Tko3Ul/wJ+MaoJgpMHu/3BOhP1wiIx6RsE2uQeZCq3mTAoITvQzd58LwC2UjO0AXOBjAFN19K7WJJI+goztG8CleYk33BVqZ95PdExmgCus5WnAKrEAAAACfuXFnbwDbsk+JZ+OR1SJNrTCn3XbOS7FuyuvH1v38hBEASr0zhEme83jAT+oXMFbfJyhxEa/MQACU+RyXH7WJ</EncryptedPassword>
+    <History>False|2024-04-19T11:34:28.0954679Z;False|2024-04-19T11:58:16.1649772+01:00;False|2024-04-19T11:57:12.1033791+01:00;False|2024-04-19T11:48:25.2786792+01:00;False|2024-04-19T11:42:20.3852434+01:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="WebApiDatabase">
+      <Value>Server=pgsqlserver24.postgres.database.azure.com%3bDatabase=IncomeReportDB%3bPort=5432%3bUser Id=pgadmin_cal%3bPassword=pgserver%4024%3bSslMode=Require</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Income_CalculatorAPI.Data.IncomeReportContext">
+      <Value>Server=pgsqlserver24.postgres.database.azure.com%3bDatabase=IncomeReportDB%3bPort=5432%3bUser Id=pgadmin_cal%3bPassword=pgserver%4024%3bSslMode=Require</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

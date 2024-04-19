@@ -21,7 +21,7 @@ public static class IncomeReportEndpoints
             dbContext.IncomeReport.Add(incomeReport);
             await dbContext.SaveChangesAsync();
 
-            return Results.Ok(incomeReport.Id);
+            return Results.Json(incomeReport.Id);
         });
 
         return group;
